@@ -539,3 +539,39 @@ button.big-button {
   background-color: #d9400e;
   border-color: #cf3d0e;
 }
+
+/* Cases Section */
+.cases {
+  background-color: #FFF;
+  overflow: hidden;
+  padding-bottom: 5rem;
+}
+.cases .content {
+  margin-top: 7.875rem;
+  padding: none;
+  color: #1d1e21;
+  text-align: center;
+}
+.cases h2 {
+  text-align: center;
+  color: #000;
+  margin-top: 5rem;
+  font-weight: 300;
+  font-size: 2rem;
+}
+.cases .devices {
+  float: left;
+  margin: 0 auto;
+}
+.devices{
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  text-align: center;
+}
+.devices li{
+  display: inline-table;
+  margin-left: 2.5rem;
+}
