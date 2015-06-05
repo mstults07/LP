@@ -436,8 +436,10 @@ th {
 /* Borders for testing */
 
 body {
+    box-sizing: border-box;
     background-color: LightGray;
     font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 div {
     border: 1px solid Chocolate;
@@ -449,44 +451,49 @@ nav {
   background-color: #ffffff;
 }
 
-/* Navigation Section */
-.top-navigation {
-    background-color: #fff;
-}
-.top-navigation > .content {
-    height: 70px;
-}
 .content {
-  padding: 0px 15px;
-  box-sizing: border-box;
+  padding: 0 0.938rem;
   width: 970px;
   margin: 0 auto;
 }
+
+/* Navigation Section */
+
+.top-navigation {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #DDD;
+    z-index: 9999;
+}
+.top-navigation > .content {
+    height: 4.375rem;
+}
+.top-navigation .logo{
+  height: 4.375rem;
+}
 .top-navigation .links {
   float: right;
-  margin-top: 25px;
-  vertical-align: middle;
-  font-family: 'Roboto', sans-serif; 
+  margin-top: 1.7rem;
   font-size: 16px; 
   color: #838994; 
   letter-spacing: 0.03em;
-  -webkit-font-smoothing: antialiased;
-}
-img.logo {
-  height: 70px;
-}
-.top-navigation .links > .active {
-    color: #4c5058;
-    font-weight: 600;
 }
 .top-navigation .links li {
   display: inline-table;
-  margin-left: 25px;
+  margin-left: 1.563rem;
+}
+.top-navigation .links > li.active {
+    color: #4c5058;
+    font-weight: 500;
 }
 .top-navigation .links li:hover{
   color: #333333;
   cursor: pointer;
 }
+
+/* Introduction Section */
+
 .Introduction {
   background-image: url(http://now.jda.com/rs/366-TWM-779/images/karma-background.jpg);
   background-position: center bottom;
@@ -500,14 +507,25 @@ img.logo {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #FFFFFF;
+  padding: 0px;
 }
 .Introduction h1 {
   margin-top: 17.5rem;
+  font-size: 3.125rem;
+  font-weight: 300;
 }
-.Inroduction h3 {
+.Introduction h3 {
   margin-top: 1.25rem;
+  font-size: 1.563rem;
+  font-weight: 300;
 }
-.button {
+.Introduction .buttons{
+  color: white;
+  text-align: center;
+  margin-top: 1.563rem;
+}
+button.big-button {
+  margin: 0 auto;
   width: 9.68rem;
   background-color: #f15a29;
   border: 1px solid #f15a29;
@@ -516,9 +534,8 @@ img.logo {
   color: #FFFFFF;
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  margin: 0 auto;
 }
-.button:hover {
+.big-button:hover {
   background-color: #d9400e;
   border-color: #cf3d0e;
 }
