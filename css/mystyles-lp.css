@@ -453,7 +453,7 @@ nav {
 
 .content {
   padding: 0 0.938rem;
-  width: 970px;
+  width: 1175px;
   margin: 0 auto;
 }
 
@@ -553,15 +553,14 @@ button.big-button {
   text-align: center;
 }
 .cases h2 {
-  text-align: center;
   color: #000;
-  margin-top: 5rem;
+  margin: 1.625rem 0 3.125rem;
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 2.75rem;
 }
-.cases .devices {
+.cases .devices > li {
   float: left;
-  margin: 0 auto;
+  width: 33.3333333%;
 }
 .devices{
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
@@ -572,6 +571,6 @@ button.big-button {
   text-align: center;
 }
 .devices li{
-  display: inline-table;
+  display: inline-block;
   margin-left: 2.5rem;
 }
