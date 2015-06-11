@@ -433,7 +433,7 @@ th {
   padding: 0;
 }
 
-/* Borders for testing */
+/* Borders for testing 
 
 body {
     box-sizing: border-box;
@@ -443,7 +443,7 @@ body {
 }
 div {
     border: 1px solid Chocolate;
-}
+}*/
 
 /* Actual Styling */
 
@@ -619,4 +619,5 @@ footer {
     font-size: 0.9rem;
     font-weight: 300;
     color: #838994;
+    text-align: center;
 }
